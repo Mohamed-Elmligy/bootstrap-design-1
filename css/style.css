@@ -13,9 +13,9 @@ theme name: elite crop
       border-radius: 10%;
       padding: 5px;
       cursor: pointer; }
-    .upper-bar .col-sm-12:nth-of-type(2) span:hover {
-      background-color: #ec1c23;
-      color: #fff; }
+      .upper-bar .col-sm-12:nth-of-type(2) span:hover {
+        background-color: #ec1c23;
+        color: #fff; }
 
 nav .navbar-brand span {
   font-size: 30px; }
@@ -35,8 +35,9 @@ nav .navbar-nav .nav-link {
   margin-left: 20px;
   text-transform: uppercase;
   font-weight: bold; }
+  nav .navbar-nav .nav-link:hover {
+    color: #ec1c23 !important; }
 
-nav .navbar-nav .nav-link:hover,
 nav .navbar-nav .dropdown-item:hover {
   color: #ec1c23 !important; }
 
@@ -91,11 +92,11 @@ nav .navbar-nav .dropdown-item:hover {
     -o-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
-  .features .box:hover {
-    border-radius: 10px;
-    border: #ec1c23 solid 1px;
-    box-shadow: 10px 20px 30px #ec1c23;
-    cursor: pointer; }
+    .features .box:hover {
+      border-radius: 10px;
+      border: #ec1c23 solid 1px;
+      box-shadow: 10px 20px 30px #ec1c23;
+      cursor: pointer; }
   .features i {
     background-color: #ec1c23;
     color: #fff;
@@ -158,11 +159,11 @@ nav .navbar-nav .dropdown-item:hover {
       -o-transition: all 0.5s ease-in-out;
       -ms-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
-    .featured-work ul li:hover {
-      background-color: #ec1c23;
-      border: 2px solid #ec1c23;
-      color: #fff;
-      cursor: pointer; }
+      .featured-work ul li:hover {
+        background-color: #ec1c23;
+        border: 2px solid #ec1c23;
+        color: #fff;
+        cursor: pointer; }
     .featured-work ul .active {
       background-color: #ec1c23;
       border: 2px solid #ec1c23;

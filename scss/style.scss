@@ -37,11 +37,10 @@ $w: #fff;
             border-radius: 10%;
             padding: 5px;
             cursor: pointer;
-        }
-
-        span:hover {
-            background-color: $secoundColor;
-            color: $w;
+            &:hover {
+                background-color: $secoundColor;
+                color: $w;
+            }
         }
     }
 }
@@ -75,9 +74,10 @@ nav {
             margin-left: 20px;
             text-transform: uppercase;
             font-weight: bold;
+            &:hover {
+                color: $secoundColor !important; 
+            }
         }
-
-        .nav-link:hover,
         .dropdown-item:hover {
             color: $secoundColor !important;
         }
@@ -159,15 +159,13 @@ nav {
 
     .box {
         @include transition (all .3s ease-in-out);
+        &:hover {
+            border-radius: 10px;
+            border: $secoundColor solid 1px;
+            box-shadow: 10px 20px 30px $secoundColor;
+            cursor: pointer;
+        }
     }
-
-    .box:hover {
-        border-radius: 10px;
-        border: $secoundColor solid 1px;
-        box-shadow: 10px 20px 30px $secoundColor;
-        cursor: pointer;
-    }
-
     i {
         background-color: $secoundColor;
         color: $w;
@@ -252,13 +250,12 @@ nav {
             margin: 0 0 20px 10px;
             font-size: 20px;
             @include transition (all .5s ease-in-out);
-        }
-
-        li:hover {
-            background-color: $secoundColor;
-            border: 2px solid $secoundColor;
-            color: $w;
-            cursor: pointer;
+            &:hover {
+                background-color: $secoundColor;
+                border: 2px solid $secoundColor;
+                color: $w;
+                cursor: pointer;
+            }
         }
         .active {
             background-color: $secoundColor;
