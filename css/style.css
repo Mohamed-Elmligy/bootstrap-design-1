@@ -304,3 +304,71 @@ nav .navbar-nav .dropdown-item:hover {
         padding: 16px 21px;
         line-height: 5;
         letter-spacing: 4px; }
+
+.chooseUS .col-6 {
+  padding: 0; }
+  .chooseUS .col-6:last-child {
+    background-color: #08526d;
+    color: #fff;
+    padding-top: 50px; }
+  .chooseUS .col-6 h2 {
+    margin: 40px; }
+  .chooseUS .col-6 p {
+    margin: 40px;
+    line-height: 2;
+    font-size: 18px; }
+  .chooseUS .col-6 img {
+    max-width: 100%; }
+  .chooseUS .col-6 a {
+    background-color: #ec1c23;
+    color: #fff;
+    padding: 6px 20px;
+    font-size: 15px;
+    margin: 10px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase; }
+
+.stats {
+  color: #08526d;
+  padding: 100px 0; }
+  .stats span {
+    display: block;
+    font-size: 50px;
+    font-weight: bold; }
+  .stats p {
+    color: #ec1c23;
+    font-size: 24px;
+    margin: 0; }
+
+.contactUS {
+  background-color: #ec1c23;
+  color: #fff;
+  padding: 80px 0;
+  font-size: 23px; }
+  .contactUS p {
+    margin: 0; }
+  .contactUS a {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 6px 15px 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none; }
+
+footer .col-md-4 .info {
+  height: 80vh;
+  padding: 100px 0; }
+  footer .col-md-4 .info h2 {
+    font-size: 30px; }
+    footer .col-md-4 .info h2 span:first-child {
+      color: #08526d;
+      font-weight: bold; }
+    footer .col-md-4 .info h2 span:last-child {
+      color: #ec1c23; }
+
+footer .col-md-4 .helpful {
+  padding: 100px 0; }
+
+footer .col-md-4 .contact {
+  padding: 100px 0; }

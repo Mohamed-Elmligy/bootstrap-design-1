@@ -316,9 +316,11 @@ nav {
     .card {
         width: 100%;
         height: 100%;
+
         .card-img-top {
             height: 50%;
         }
+
         .card-title {
             font-size: 20px;
             line-height: 1.5;
@@ -400,6 +402,7 @@ nav {
 .pricingTable {
     background-color: #f7f7f7;
     padding: 100px 0 100px;
+
     h2 {
         font-weight: bold;
         font-size: 30px;
@@ -416,24 +419,28 @@ nav {
 
     .row {
         margin: 0;
-       .col-md-4:nth-child(2) .card {
-        margin-bottom: 20px;
-        .card-body {
-            p {
-                background-color: $secoundColor;
-                color: $w;
-                margin:0;
-            }
 
-            a {
-                background-color: $mainColor;
+        .col-md-4:nth-child(2) .card {
+            margin-bottom: 20px;
+
+            .card-body {
+                p {
+                    background-color: $secoundColor;
+                    color: $w;
+                    margin: 0;
+                }
+
+                a {
+                    background-color: $mainColor;
+                }
             }
         }
-       }
+
         .col-md-4 .card {
             padding: 0;
             width: 70%;
             margin-left: 15%;
+
             .card-title {
                 font-size: 20px;
                 font-weight: bold;
@@ -443,6 +450,7 @@ nav {
 
             .card-body {
                 padding: 30px 0 0 0;
+
                 p {
                     color: $mainColor;
                     font-weight: bold;
@@ -450,12 +458,13 @@ nav {
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     width: 100%;
                 }
-                    span {
-                        font-size: 30px;
-                        text-transform: uppercase;
-                    }
-            } 
-            
+
+                span {
+                    font-size: 30px;
+                    text-transform: uppercase;
+                }
+            }
+
 
             a {
                 font-weight: bold;
@@ -472,3 +481,108 @@ nav {
 }
 
 //end pricing table
+// start choose us 
+.chooseUS {
+    .col-6 {
+        padding: 0;
+
+        &:last-child {
+            background-color: $mainColor;
+            color: $w;
+            padding-top: 50px;
+        }
+
+        h2 {
+            margin: 40px;
+        }
+
+        p {
+            margin: 40px;
+            line-height: 2;
+            font-size: 18px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+        a {
+            background-color: $secoundColor;
+            color: $w;
+            padding: 6px 20px;
+            font-size: 15px;
+            margin: 10px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+
+//end choose us
+// start statistics 
+.stats {
+  color: $mainColor;
+  padding: 100px 0;
+   span {
+      display: block;
+      font-size: 50px;
+      font-weight: bold;
+  } 
+  p {
+      color: $secoundColor;
+      font-size: 24px;
+      margin: 0;
+  } 
+}
+// end statistics 
+// start contact us
+.contactUS {
+   background-color: $secoundColor;
+   color: $w; 
+   padding: 80px 0;
+   font-size: 23px;
+
+   p {
+       margin: 0;
+   }
+
+   a {
+       color: $w;
+       border: 2px solid $w;
+       padding: 6px 15px 8px;
+       text-transform: uppercase;
+       font-weight: bold;
+       text-decoration: none;
+   }
+}
+// end contact us
+//start footer 
+footer {
+    .col-md-4 {
+        .info {
+            height: 80vh;
+            padding: 100px 0;
+            h2 {
+                font-size: 30px;
+                span:first-child {
+                    color: $mainColor;
+                    font-weight: bold;
+                }
+                span:last-child {
+                    color: $secoundColor;
+                }
+            }
+        }
+    }
+    .col-md-4 {
+        .helpful {
+            padding: 100px 0;
+        }
+    }
+    .col-md-4 {
+        .contact {
+            padding: 100px 0;
+        }
+    }
+}
+//end footer
