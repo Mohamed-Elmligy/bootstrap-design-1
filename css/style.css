@@ -45,8 +45,8 @@ nav .navbar-nav .dropdown-item:hover {
   color: #fff;
   background-color: #333333; }
   .slider ol li {
-    height: 10px;
-    width: 10px; }
+    height: 4px;
+    width: 30px; }
   .slider .carousel-inner {
     display: flex;
     align-items: center;
@@ -182,3 +182,125 @@ nav .navbar-nav .dropdown-item:hover {
         transition: all 0.5s ease-in-out; }
   .featured-work .shuffle-imges .margin-top-bottom {
     margin: 50px 0 5px 0; }
+
+.latestPost {
+  padding: 0 0 100px; }
+  .latestPost h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px; }
+  .latestPost p:nth-child(2) {
+    line-height: 1.6;
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto 15px;
+    color: #6a6a6a; }
+  .latestPost .card {
+    width: 100%;
+    height: 100%; }
+    .latestPost .card .card-img-top {
+      height: 50%; }
+    .latestPost .card .card-title {
+      font-size: 20px;
+      line-height: 1.5;
+      color: #08526d; }
+    .latestPost .card a {
+      font-weight: bold;
+      color: #ec1c23; }
+
+.testimonials {
+  position: relative;
+  height: 80vh;
+  background-image: url(../img/testimonials/0.jpg);
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover; }
+  .testimonials .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1; }
+  .testimonials .container {
+    z-index: 2; }
+  .testimonials .carousel {
+    height: 100%;
+    width: 100%; }
+    .testimonials .carousel ol {
+      margin-bottom: 2rem; }
+      .testimonials .carousel ol li {
+        height: 4px;
+        width: 30px; }
+    .testimonials .carousel .carousel-item {
+      height: 99%;
+      width: 99%; }
+      .testimonials .carousel .carousel-item .carousel-caption {
+        top: 5%; }
+        .testimonials .carousel .carousel-item .carousel-caption img {
+          height: 300px;
+          width: 300px;
+          border-radius: 50%;
+          border: 2px solid #08526d;
+          left: 50%;
+          top: 50%;
+          margin-bottom: 30px; }
+    .testimonials .carousel a {
+      opacity: 1;
+      top: 50%;
+      width: 6%;
+      height: 9%;
+      background-color: #ec1c23; }
+
+.pricingTable {
+  background-color: #f7f7f7;
+  padding: 100px 0 100px; }
+  .pricingTable h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px; }
+  .pricingTable p:nth-child(2) {
+    line-height: 1.6;
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto 40px;
+    color: #6a6a6a; }
+  .pricingTable .row {
+    margin: 0; }
+    .pricingTable .row .col-md-4:nth-child(2) .card {
+      margin-bottom: 20px; }
+      .pricingTable .row .col-md-4:nth-child(2) .card .card-body p {
+        background-color: #ec1c23;
+        color: #fff;
+        margin: 0; }
+      .pricingTable .row .col-md-4:nth-child(2) .card .card-body a {
+        background-color: #08526d; }
+    .pricingTable .row .col-md-4 .card {
+      padding: 0;
+      width: 70%;
+      margin-left: 15%; }
+      .pricingTable .row .col-md-4 .card .card-title {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: #08526d; }
+      .pricingTable .row .col-md-4 .card .card-body {
+        padding: 30px 0 0 0; }
+        .pricingTable .row .col-md-4 .card .card-body p {
+          color: #08526d;
+          font-weight: bold;
+          font-size: 40px;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          width: 100%; }
+        .pricingTable .row .col-md-4 .card .card-body span {
+          font-size: 30px;
+          text-transform: uppercase; }
+      .pricingTable .row .col-md-4 .card a {
+        font-weight: bold;
+        color: #fff;
+        background-color: #ec1c23;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 16px 21px;
+        line-height: 5;
+        letter-spacing: 4px; }
