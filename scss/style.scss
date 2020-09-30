@@ -1,588 +1,75 @@
-/* 
-coder: Mohamed Adel
-theme name: elite crop
-*/
-
-$mainColor: #08526d;
-$secoundColor: #ec1c23;
-$w: #fff;
-
-@mixin background-size ($prop) {
-    -webkit-background-size: $prop;
-    -o-background-size: $prop;
-    -ms-background-size: $prop;
-    background-size: $prop;
-}
-
-@mixin transition ($pro) {
-    -webkit-transition: $pro;
-    -o-transition: $pro;
-    -ms-transition: $pro;
-    transition: $pro;
-}
-
-// start upper bar 
-
-.upper-bar {
-    background-color: $mainColor;
-    color: $w;
-    padding: 10px;
-
-    .col-sm-12:nth-of-type(2) {
-
-        text-align: right;
-
-        span {
-            border: 2px $secoundColor solid;
-            border-radius: 10%;
-            padding: 5px;
-            cursor: pointer;
-
-            &:hover {
-                background-color: $secoundColor;
-                color: $w;
-            }
-        }
-    }
-}
-
-//end upper bar
-
-//start navbar
-nav {
-    .navbar-brand {
-        span {
-            font-size: 30px;
-        }
-
-        span:first-child {
-            color: $mainColor;
-            font-weight: bold;
-        }
-
-        span:last-child {
-            color: $secoundColor;
-        }
-    }
-
-    .navbar-collapse {
-        margin-left: 50%;
-    }
-
-    .navbar-nav {
-        .nav-link {
-            font-size: 16px;
-            margin-left: 20px;
-            text-transform: uppercase;
-            font-weight: bold;
-
-            &:hover {
-                color: $secoundColor !important;
-            }
-        }
-
-        .dropdown-item:hover {
-            color: $secoundColor !important;
-        }
-    }
-}
-
-//end navdar
-
-//start slider
-.slider {
-    color: #fff;
-    background-color: #333333;
-
-    ol li {
-        height: 4px;
-        width: 30px;
-    }
-
-    .carousel-inner {
-        display: flex;
-        align-items: center;
-        justify-content: left;
-
-        .overlay {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            background-color: rgba(0, 0, 0, .6);
-            z-index: 1;
-        }
-
-        h1 {
-            position: absolute;
-            color: #ffffff;
-            z-index: 2;
-            line-height: 1.5;
-            left: 12%;
-
-            span {
-                background-color: $secoundColor;
-                color: $w;
-                display: inline-block;
-                padding: 2px 5px;
-                border-radius: 3px;
-                margin: 5px;
-
-            }
-        }
-
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-        z-index: 2;
-    }
-
-    .carousel-item {
-        @include background-size(cover);
-    }
-
-    .carousel-one {
-        background-image: url(../img/freestocks-40k6ZqbsXuo-unsplash.jpg);
-    }
-
-    .carousel-two {
-        background-image: url(../img/maxwell-nelson-1r2CG6EQ4-Y-unsplash.jpg);
-    }
-
-    .carousel-three {
-        background-image: url(../img/nicholas-santoianni-bgFB2WJSvLA-unsplash.jpg);
-    }
-}
-
-// end slider
-
-//start features
-.features {
-    padding: 50px 0;
-
-    .box {
-        @include transition (all .3s ease-in-out);
-
-        &:hover {
-            border-radius: 10px;
-            border: $secoundColor solid 1px;
-            box-shadow: 10px 20px 30px $secoundColor;
-            cursor: pointer;
-        }
-    }
-
-    i {
-        background-color: $secoundColor;
-        color: $w;
-        padding: 12px;
-        margin: 10px 0 10px 0;
-        width: 100px;
-        height: 78px;
-    }
-
-    h3 {
-        color: $mainColor;
-        font-size: 22px;
-    }
-
-    p {
-        margin-bottom: 40px;
-    }
-}
-
-//end features
-//start overview
-.overview {
-    padding: 40px;
-    background-color: #cac8c8;
-
-    h2 {
-        font-weight: bold;
-        font-size: 30px;
-    }
-
-    p {
-        line-height: 2;
-        font-size: 20px;
-        width: 80%;
-        margin: 0 auto 15px;
-        color: #6a6a6a;
-    }
-
-    h4 {
-        letter-spacing: 2;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    button {
-        background-color: $secoundColor;
-        color: $w;
-        border-radius: 10px;
-        width: 121px;
-        height: 40px;
-        margin-top: 30px;
-    }
-}
-
-//end overview
-//start featured work
-.featured-work {
-    padding: 100px 0;
-
-    h2 {
-        font-weight: bold;
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    p {
-        line-height: 1.6;
-        font-size: 20px;
-        width: 80%;
-        margin: 0 auto 15px;
-        color: #6a6a6a;
-    }
-
-    ul {
-        margin-top: 40px;
-
-        li {
-            color: $mainColor;
-            border: 2px solid $mainColor;
-            padding: 10px 10px;
-            font-size: 20px;
-            font-weight: bold;
-            margin: 0 0 20px 10px;
-            font-size: 20px;
-            @include transition (all .5s ease-in-out);
-
-            &:hover {
-                background-color: $secoundColor;
-                border: 2px solid $secoundColor;
-                color: $w;
-                cursor: pointer;
-            }
-        }
-
-        .active {
-            background-color: $secoundColor;
-            border: 2px solid $secoundColor;
-            color: $w;
-            cursor: pointer;
-        }
-    }
-
-    .shuffle-imges {
-        .row {
-            margin: 0;
-
-            .col-md-12 {
-                padding: 0;
-
-                img {
-                    width: 300px;
-                    height: 300px;
-                    @include transition (all .5s ease-in-out);
-                }
-            }
-        }
-
-        .margin-top-bottom {
-            margin: 50px 0 5px 0;
-        }
-    }
-
-}
-
-//end featured work
-// start latest  post 
-.latestPost {
-    padding: 0 0 100px;
-
-    h2 {
-        font-weight: bold;
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    p:nth-child(2) {
-        line-height: 1.6;
-        font-size: 20px;
-        width: 80%;
-        margin: 0 auto 15px;
-        color: #6a6a6a;
-    }
-
-    .card {
-        width: 100%;
-        height: 100%;
-
-        .card-img-top {
-            height: 50%;
-        }
-
-        .card-title {
-            font-size: 20px;
-            line-height: 1.5;
-            color: $mainColor;
-        }
-
-        a {
-            font-weight: bold;
-            color: $secoundColor;
-        }
-    }
-}
-
-//end latest post
-//start testimonials 
-.testimonials {
-    position: relative;
-    height: 80vh;
-    background-image: url(../img/testimonials/0.jpg);
-    @include background-size(cover);
-
-    .overlay {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, .6);
-        z-index: 1;
-        ;
-    }
-
-    .container {
-        z-index: 2;
-    }
-
-    .carousel {
-        height: 100%;
-        width: 100%;
-
-        ol {
-            margin-bottom: 2rem;
-
-            li {
-                height: 4px;
-                width: 30px;
-            }
-        }
-
-        .carousel-item {
-            height: 99%;
-            width: 99%;
-
-            .carousel-caption {
-                top: 5%;
-
-                img {
-                    height: 300px;
-                    width: 300px;
-                    border-radius: 50%;
-                    border: 2px solid $mainColor;
-                    left: 50%;
-                    top: 50%;
-                    margin-bottom: 30px;
-                }
-            }
-        }
-
-        a {
-            opacity: 1;
-            top: 50%;
-            width: 6%;
-            height: 9%;
-            background-color: $secoundColor;
-        }
-    }
-}
-
-//end testimonials 
-// start pricing table
-.pricingTable {
-    background-color: #f7f7f7;
-    padding: 100px 0 100px;
-
-    h2 {
-        font-weight: bold;
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    p:nth-child(2) {
-        line-height: 1.6;
-        font-size: 20px;
-        width: 80%;
-        margin: 0 auto 40px;
-        color: #6a6a6a;
-    }
-
-    .row {
-        margin: 0;
-
-        .col-md-4:nth-child(2) .card {
-            margin-bottom: 20px;
-
-            .card-body {
-                p {
-                    background-color: $secoundColor;
-                    color: $w;
-                    margin: 0;
-                }
-
-                a {
-                    background-color: $mainColor;
-                }
-            }
-        }
-
-        .col-md-4 .card {
-            padding: 0;
-            width: 70%;
-            margin-left: 15%;
-
-            .card-title {
-                font-size: 20px;
-                font-weight: bold;
-                line-height: 1.5;
-                color: $mainColor;
-            }
-
-            .card-body {
-                padding: 30px 0 0 0;
-
-                p {
-                    color: $mainColor;
-                    font-weight: bold;
-                    font-size: 40px;
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                    width: 100%;
-                }
-
-                span {
-                    font-size: 30px;
-                    text-transform: uppercase;
-                }
-            }
-
-
-            a {
-                font-weight: bold;
-                color: $w;
-                background-color: $secoundColor;
-                text-transform: uppercase;
-                text-decoration: none;
-                padding: 16px 21px;
-                line-height: 5;
-                letter-spacing: 4px;
-            }
-        }
-    }
-}
-
-//end pricing table
-// start choose us 
-.chooseUS {
-    .col-6 {
-        padding: 0;
-
-        &:last-child {
-            background-color: $mainColor;
-            color: $w;
-            padding-top: 50px;
-        }
-
-        h2 {
-            margin: 40px;
-        }
-
-        p {
-            margin: 40px;
-            line-height: 2;
-            font-size: 18px;
-        }
-
-        img {
-            max-width: 100%;
-        }
-        a {
-            background-color: $secoundColor;
-            color: $w;
-            padding: 6px 20px;
-            font-size: 15px;
-            margin: 10px 40px;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-    }
-}
-
-//end choose us
-// start statistics 
-.stats {
-  color: $mainColor;
-  padding: 100px 0;
-   span {
-      display: block;
-      font-size: 50px;
-      font-weight: bold;
-  } 
-  p {
-      color: $secoundColor;
-      font-size: 24px;
-      margin: 0;
-  } 
-}
-// end statistics 
-// start contact us
-.contactUS {
-   background-color: $secoundColor;
-   color: $w; 
-   padding: 80px 0;
-   font-size: 23px;
-
-   p {
-       margin: 0;
-   }
-
-   a {
-       color: $w;
-       border: 2px solid $w;
-       padding: 6px 15px 8px;
-       text-transform: uppercase;
-       font-weight: bold;
-       text-decoration: none;
-   }
-}
-// end contact us
-//start footer 
-footer {
-    .col-md-4 {
-        .info {
-            height: 80vh;
-            padding: 100px 0;
-            h2 {
-                font-size: 30px;
-                span:first-child {
-                    color: $mainColor;
-                    font-weight: bold;
-                }
-                span:last-child {
-                    color: $secoundColor;
-                }
-            }
-        }
-    }
-    .col-md-4 {
-        .helpful {
-            padding: 100px 0;
-        }
-    }
-    .col-md-4 {
-        .contact {
-            padding: 100px 0;
-        }
-    }
-}
-//end footer
+//*----------------------------------------------------
+@File: Default Styles
+@Author: Mohamed Adel
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+
+/*=====================================================================
+@Template Name: EliteCrop 
+@Developed By: Mohamed Adel
+Author E-mail: mohamedadelsa4@gmail.com
+
+=====================================================================*/ 
+
+/*----------------------------------------------------*/
+@import "variables";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "mixins";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "upper-bar";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "navbar";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "slider";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "features";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "features";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "featured-work";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "latestPost";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "testimonials";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "pricingTable";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "chooseUS";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "statistics";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "contactUS";
+/*---------------------------------------------------- */
+
+/*----------------------------------------------------*/
+@import "footer";
+/*---------------------------------------------------- */

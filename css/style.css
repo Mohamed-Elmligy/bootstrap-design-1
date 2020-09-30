@@ -356,19 +356,54 @@ nav .navbar-nav .dropdown-item:hover {
     font-weight: bold;
     text-decoration: none; }
 
-footer .col-md-4 .info {
-  height: 80vh;
-  padding: 100px 0; }
-  footer .col-md-4 .info h2 {
-    font-size: 30px; }
-    footer .col-md-4 .info h2 span:first-child {
+footer {
+  padding: 100px 0 0 0; }
+  footer .info {
+    height: 40vh; }
+    footer .info h2 {
+      font-size: 30px;
+      margin-bottom: 35px; }
+      footer .info h2 span:first-child {
+        color: #08526d;
+        font-weight: bold; }
+      footer .info h2 span:last-child {
+        color: #ec1c23; }
+    footer .info p {
+      line-height: 1.8;
+      color: #727272; }
+    footer .info a {
       color: #08526d;
+      font-size: 15px;
       font-weight: bold; }
-    footer .col-md-4 .info h2 span:last-child {
-      color: #ec1c23; }
-
-footer .col-md-4 .helpful {
-  padding: 100px 0; }
-
-footer .col-md-4 .contact {
-  padding: 100px 0; }
+      footer .info a:before {
+        font-family: 'fontAwesome';
+        content: "\f138";
+        display: inline-block; }
+  footer .helpful h2 {
+    font-size: 22px;
+    color: #08526d;
+    margin-bottom: 50px; }
+  footer .helpful ul li:before {
+    font-family: 'fontAwesome';
+    content: "\f054";
+    margin-right: 5px;
+    color: #08526d;
+    font-size: 12px; }
+  footer .contact h2 {
+    font-size: 22px;
+    color: #08526d;
+    margin-bottom: 50px; }
+  footer .contact ul li {
+    margin-bottom: 13px; }
+  footer .copyright {
+    border-top: 1px solid #c0c0c0;
+    padding: 20px; }
+    footer .copyright ul {
+      margin: 0; }
+      footer .copyright ul li {
+        display: inline-block; }
+        footer .copyright ul li a {
+          display: inline-block;
+          margin-left: 20px;
+          font-size: 20px;
+          color: #777; }

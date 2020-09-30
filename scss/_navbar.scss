@@ -1,0 +1,40 @@
+//start navbar
+nav {
+    .navbar-brand {
+        span {
+            font-size: 30px;
+        }
+
+        span:first-child {
+            color: $mainColor;
+            font-weight: bold;
+        }
+
+        span:last-child {
+            color: $secoundColor;
+        }
+    }
+
+    .navbar-collapse {
+        margin-left: 50%;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            font-size: 16px;
+            margin-left: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &:hover {
+                color: $secoundColor !important;
+            }
+        }
+
+        .dropdown-item:hover {
+            color: $secoundColor !important;
+        }
+    }
+}
+
+//end navdar

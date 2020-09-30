@@ -1,0 +1,20 @@
+
+// start statistics 
+.stats {
+    color: $mainColor;
+    padding: 100px 0;
+
+    span {
+        display: block;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    p {
+        color: $secoundColor;
+        font-size: 24px;
+        margin: 0;
+    }
+}
+
+// end statistics 

@@ -1,0 +1,39 @@
+// start choose us 
+.chooseUS {
+    .col-6 {
+        padding: 0;
+
+        &:last-child {
+            background-color: $mainColor;
+            color: $w;
+            padding-top: 50px;
+        }
+
+        h2 {
+            margin: 40px;
+        }
+
+        p {
+            margin: 40px;
+            line-height: 2;
+            font-size: 18px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        a {
+            background-color: $secoundColor;
+            color: $w;
+            padding: 6px 20px;
+            font-size: 15px;
+            margin: 10px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+
+//end choose us

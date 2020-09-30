@@ -1,0 +1,66 @@
+//start slider
+.slider {
+    color: #fff;
+    background-color: #333333;
+
+    ol li {
+        height: 4px;
+        width: 30px;
+    }
+
+    .carousel-inner {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        .overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .6);
+            z-index: 1;
+        }
+
+        h1 {
+            position: absolute;
+            color: #ffffff;
+            z-index: 2;
+            line-height: 1.5;
+            left: 12%;
+
+            span {
+                background-color: $secoundColor;
+                color: $w;
+                display: inline-block;
+                padding: 2px 5px;
+                border-radius: 3px;
+                margin: 5px;
+
+            }
+        }
+
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        z-index: 2;
+    }
+
+    .carousel-item {
+        @include background-size(cover);
+    }
+
+    .carousel-one {
+        background-image: url(../img/freestocks-40k6ZqbsXuo-unsplash.jpg);
+    }
+
+    .carousel-two {
+        background-image: url(../img/maxwell-nelson-1r2CG6EQ4-Y-unsplash.jpg);
+    }
+
+    .carousel-three {
+        background-image: url(../img/nicholas-santoianni-bgFB2WJSvLA-unsplash.jpg);
+    }
+}
+
+// end slider

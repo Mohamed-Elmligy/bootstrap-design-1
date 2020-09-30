@@ -1,0 +1,15 @@
+/* mixin used in this template*/
+
+@mixin background-size ($prop) {
+    -webkit-background-size: $prop;
+    -o-background-size: $prop;
+    -ms-background-size: $prop;
+    background-size: $prop;
+}
+
+@mixin transition ($pro) {
+    -webkit-transition: $pro;
+    -o-transition: $pro;
+    -ms-transition: $pro;
+    transition: $pro;
+}

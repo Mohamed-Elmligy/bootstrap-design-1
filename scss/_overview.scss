@@ -1,0 +1,33 @@
+//start overview
+.overview {
+    padding: 40px;
+    background-color: #cac8c8;
+
+    h2 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    p {
+        line-height: 2;
+        font-size: 20px;
+        width: 80%;
+        margin: 0 auto 15px;
+        color: #6a6a6a;
+    }
+
+    h4 {
+        letter-spacing: 2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    button {
+        background-color: $secoundColor;
+        color: $w;
+        border-radius: 10px;
+        width: 121px;
+        height: 40px;
+        margin-top: 30px;
+    }
+}
+//end overview

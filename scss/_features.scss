@@ -1,0 +1,35 @@
+//start features
+.features {
+    padding: 50px 0;
+
+    .box {
+        @include transition (all .3s ease-in-out);
+
+        &:hover {
+            border-radius: 10px;
+            border: $secoundColor solid 1px;
+            box-shadow: 10px 20px 30px $secoundColor;
+            cursor: pointer;
+        }
+    }
+
+    i {
+        background-color: $secoundColor;
+        color: $w;
+        padding: 12px;
+        margin: 10px 0 10px 0;
+        width: 100px;
+        height: 78px;
+    }
+
+    h3 {
+        color: $mainColor;
+        font-size: 22px;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+}
+
+//end features
