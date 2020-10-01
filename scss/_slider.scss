@@ -12,6 +12,9 @@
         display: flex;
         align-items: center;
         justify-content: left;
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
 
         .overlay {
             position: absolute;
@@ -27,7 +30,15 @@
             z-index: 2;
             line-height: 1.5;
             left: 12%;
-
+            @media (max-width: 992px) {
+                font-size: 40px;
+            }
+            @media (max-width: 768px) {
+                font-size: 30px;
+                max-width: 100%;
+                left: auto;
+                text-align: center;
+            }
             span {
                 background-color: $secoundColor;
                 color: $w;

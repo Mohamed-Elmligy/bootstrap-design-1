@@ -1,22 +1,46 @@
-/* 
-coder: Mohamed Adel
-theme name: elite crop
-*/
+@File : Default Styles
+@Author: Mohamed Adel
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+
+/*=====================================================================
+@Template Name: EliteCrop 
+@Developed By: Mohamed Adel
+Author E-mail: mohamedadelsa4@gmail.com
+
+=====================================================================*/ 
+
+/*-------------------------variables---------------------------*/
+@import "variables";
+/*---------------------------------------------------- */
+/*-----------------------mixins-----------------------------*/
+/* mixin used in this template*/
+/*---------------------------------------------------- */
+/*------------------------upper-bar----------------------------*/
+/* the variables used */
+/*Color Variables*/
 .upper-bar {
   background-color: #08526d;
-  color: #fff;
-  padding: 10px; }
-  .upper-bar .col-sm-12:nth-of-type(2) {
-    text-align: right; }
-    .upper-bar .col-sm-12:nth-of-type(2) span {
+  color: #fff; }
+  .upper-bar .bar {
+    margin: 15px 0; }
+    @media (max-width: 576px) {
+      .upper-bar .bar:first-child {
+        margin-bottom: 0; } }
+    .upper-bar .bar span {
       border: 2px #ec1c23 solid;
       border-radius: 10%;
       padding: 5px;
       cursor: pointer; }
-      .upper-bar .col-sm-12:nth-of-type(2) span:hover {
+      .upper-bar .bar span:hover {
         background-color: #ec1c23;
         color: #fff; }
 
+/*---------------------------------------------------- */
+/*-----------------------navbar-----------------------------*/
 nav .navbar-brand span {
   font-size: 30px; }
 
@@ -27,13 +51,9 @@ nav .navbar-brand span:first-child {
 nav .navbar-brand span:last-child {
   color: #ec1c23; }
 
-nav .navbar-collapse {
-  margin-left: 50%; }
-
 nav .navbar-nav .nav-link {
   font-size: 16px;
   margin-left: 20px;
-  text-transform: uppercase;
   font-weight: bold; }
   nav .navbar-nav .nav-link:hover {
     color: #ec1c23 !important; }
@@ -41,6 +61,8 @@ nav .navbar-nav .nav-link {
 nav .navbar-nav .dropdown-item:hover {
   color: #ec1c23 !important; }
 
+/*---------------------------------------------------- */
+/*----------------------slider------------------------------*/
 .slider {
   color: #fff;
   background-color: #333333; }
@@ -51,6 +73,9 @@ nav .navbar-nav .dropdown-item:hover {
     display: flex;
     align-items: center;
     justify-content: left; }
+    @media (max-width: 768px) {
+      .slider .carousel-inner {
+        justify-content: center; } }
     .slider .carousel-inner .overlay {
       position: absolute;
       height: 100%;
@@ -63,6 +88,15 @@ nav .navbar-nav .dropdown-item:hover {
       z-index: 2;
       line-height: 1.5;
       left: 12%; }
+      @media (max-width: 992px) {
+        .slider .carousel-inner h1 {
+          font-size: 40px; } }
+      @media (max-width: 768px) {
+        .slider .carousel-inner h1 {
+          font-size: 30px;
+          max-width: 100%;
+          left: auto;
+          text-align: center; } }
       .slider .carousel-inner h1 span {
         background-color: #ec1c23;
         color: #fff;
@@ -85,6 +119,8 @@ nav .navbar-nav .dropdown-item:hover {
   .slider .carousel-three {
     background-image: url(../img/nicholas-santoianni-bgFB2WJSvLA-unsplash.jpg); }
 
+/*---------------------------------------------------- */
+/*----------------------features------------------------------*/
 .features {
   padding: 50px 0; }
   .features .box {
@@ -110,18 +146,27 @@ nav .navbar-nav .dropdown-item:hover {
   .features p {
     margin-bottom: 40px; }
 
+/*---------------------------------------------------- */
+/*------------------------overview----------------------------*/
 .overview {
   padding: 40px;
   background-color: #cac8c8; }
   .overview h2 {
     font-weight: bold;
     font-size: 30px; }
+    @media (max-width: 992px) {
+      .overview h2 {
+        font-size: 20px; } }
   .overview p {
     line-height: 2;
     font-size: 20px;
     width: 80%;
     margin: 0 auto 15px;
     color: #6a6a6a; }
+    @media (max-width: 992px) {
+      .overview p {
+        width: 100%;
+        margin-bottom: 0; } }
   .overview h4 {
     letter-spacing: 2;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
@@ -133,6 +178,8 @@ nav .navbar-nav .dropdown-item:hover {
     height: 40px;
     margin-top: 30px; }
 
+/*---------------------------------------------------- */
+/*-------------------------featured-work---------------------------*/
 .featured-work {
   padding: 100px 0; }
   .featured-work h2 {
@@ -183,6 +230,8 @@ nav .navbar-nav .dropdown-item:hover {
   .featured-work .shuffle-imges .margin-top-bottom {
     margin: 50px 0 5px 0; }
 
+/*---------------------------------------------------- */
+/*--------------------------latestPost--------------------------*/
 .latestPost {
   padding: 0 0 100px; }
   .latestPost h2 {
@@ -208,6 +257,8 @@ nav .navbar-nav .dropdown-item:hover {
       font-weight: bold;
       color: #ec1c23; }
 
+/*---------------------------------------------------- */
+/*-------------------------testimonials---------------------------*/
 .testimonials {
   position: relative;
   height: 80vh;
@@ -228,7 +279,7 @@ nav .navbar-nav .dropdown-item:hover {
     height: 100%;
     width: 100%; }
     .testimonials .carousel ol {
-      margin-bottom: 2rem; }
+      margin-bottom: 1rem; }
       .testimonials .carousel ol li {
         height: 4px;
         width: 30px; }
@@ -237,6 +288,15 @@ nav .navbar-nav .dropdown-item:hover {
       width: 99%; }
       .testimonials .carousel .carousel-item .carousel-caption {
         top: 5%; }
+        @media (max-width: 992px) {
+          .testimonials .carousel .carousel-item .carousel-caption {
+            top: 10%; } }
+        @media (max-width: 768px) {
+          .testimonials .carousel .carousel-item .carousel-caption {
+            top: 15%; } }
+        @media (max-width: 544px) {
+          .testimonials .carousel .carousel-item .carousel-caption {
+            top: 20%; } }
         .testimonials .carousel .carousel-item .carousel-caption img {
           height: 300px;
           width: 300px;
@@ -245,6 +305,18 @@ nav .navbar-nav .dropdown-item:hover {
           left: 50%;
           top: 50%;
           margin-bottom: 30px; }
+          @media (max-width: 992px) {
+            .testimonials .carousel .carousel-item .carousel-caption img {
+              height: 200px;
+              width: 200px; } }
+          @media (max-width: 768px) {
+            .testimonials .carousel .carousel-item .carousel-caption img {
+              height: 150px;
+              width: 150px; } }
+          @media (max-width: 544px) {
+            .testimonials .carousel .carousel-item .carousel-caption img {
+              height: 100px;
+              width: 100px; } }
     .testimonials .carousel a {
       opacity: 1;
       top: 50%;
@@ -252,6 +324,8 @@ nav .navbar-nav .dropdown-item:hover {
       height: 9%;
       background-color: #ec1c23; }
 
+/*---------------------------------------------------- */
+/*-------------------------pricingTable---------------------------*/
 .pricingTable {
   background-color: #f7f7f7;
   padding: 100px 0 100px; }
@@ -268,7 +342,11 @@ nav .navbar-nav .dropdown-item:hover {
   .pricingTable .row {
     margin: 0; }
     .pricingTable .row .col-md-4:nth-child(2) .card {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      margin-top: -20px; }
+      @media (max-width: 768px) {
+        .pricingTable .row .col-md-4:nth-child(2) .card {
+          margin: 10px auto; } }
       .pricingTable .row .col-md-4:nth-child(2) .card .card-body p {
         background-color: #ec1c23;
         color: #fff;
@@ -295,6 +373,12 @@ nav .navbar-nav .dropdown-item:hover {
         .pricingTable .row .col-md-4 .card .card-body span {
           font-size: 30px;
           text-transform: uppercase; }
+          @media (max-width: 880px) {
+            .pricingTable .row .col-md-4 .card .card-body span {
+              font-size: 20px; } }
+          @media (max-width: 775px) {
+            .pricingTable .row .col-md-4 .card .card-body span {
+              font-size: 15px; } }
       .pricingTable .row .col-md-4 .card a {
         font-weight: bold;
         color: #fff;
@@ -305,30 +389,38 @@ nav .navbar-nav .dropdown-item:hover {
         line-height: 5;
         letter-spacing: 4px; }
 
-.chooseUS .col-6 {
+/*---------------------------------------------------- */
+/*------------------------chooseUS----------------------------*/
+.chooseUS .choose {
   padding: 0; }
-  .chooseUS .col-6:last-child {
+  .chooseUS .choose:last-child {
     background-color: #08526d;
     color: #fff;
     padding-top: 50px; }
-  .chooseUS .col-6 h2 {
+  .chooseUS .choose h2 {
     margin: 40px; }
-  .chooseUS .col-6 p {
+  .chooseUS .choose p {
     margin: 40px;
     line-height: 2;
     font-size: 18px; }
-  .chooseUS .col-6 img {
+  .chooseUS .choose img {
     max-width: 100%; }
-  .chooseUS .col-6 a {
+    @media (max-width: 1199px) {
+      .chooseUS .choose img {
+        width: 100%; } }
+  .chooseUS .choose a {
     background-color: #ec1c23;
     color: #fff;
     padding: 6px 20px;
+    display: inline-block;
     font-size: 15px;
     margin: 10px 40px;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase; }
 
+/*---------------------------------------------------- */
+/*------------------------statistics----------------------------*/
 .stats {
   color: #08526d;
   padding: 100px 0; }
@@ -341,6 +433,8 @@ nav .navbar-nav .dropdown-item:hover {
     font-size: 24px;
     margin: 0; }
 
+/*---------------------------------------------------- */
+/*-------------------------contactUS---------------------------*/
 .contactUS {
   background-color: #ec1c23;
   color: #fff;
@@ -356,6 +450,8 @@ nav .navbar-nav .dropdown-item:hover {
     font-weight: bold;
     text-decoration: none; }
 
+/*---------------------------------------------------- */
+/*-------------------------footer---------------------------*/
 footer {
   padding: 100px 0 0 0; }
   footer .info {
@@ -407,3 +503,5 @@ footer {
           margin-left: 20px;
           font-size: 20px;
           color: #777; }
+
+/*---------------------------------------------------- */

@@ -6,6 +6,9 @@
     h2 {
         font-weight: bold;
         font-size: 30px;
+        @media (max-width: 992px) {
+            font-size: 20px;
+        }
     }
 
     p {
@@ -14,6 +17,10 @@
         width: 80%;
         margin: 0 auto 15px;
         color: #6a6a6a;
+        @media (max-width: 992px) {
+            width: 100%;
+            margin-bottom: 0;
+        }
     }
 
     h4 {

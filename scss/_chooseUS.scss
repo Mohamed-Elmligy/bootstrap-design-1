@@ -1,6 +1,6 @@
 // start choose us 
 .chooseUS {
-    .col-6 {
+    .choose {
         padding: 0;
 
         &:last-child {
@@ -21,12 +21,16 @@
 
         img {
             max-width: 100%;
+            @media (max-width: 1199px) {
+                width:100%;
+            }
         }
 
         a {
             background-color: $secoundColor;
             color: $w;
             padding: 6px 20px;
+            display: inline-block;
             font-size: 15px;
             margin: 10px 40px;
             text-decoration: none;

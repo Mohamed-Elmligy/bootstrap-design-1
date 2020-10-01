@@ -24,7 +24,7 @@
         width: 100%;
 
         ol {
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
 
             li {
                 height: 4px;
@@ -38,6 +38,15 @@
 
             .carousel-caption {
                 top: 5%;
+                 @media (max-width: 992px) {
+                        top: 10%;
+                    }
+                    @media (max-width: 768px) {
+                        top:15%;
+                    }
+                    @media (max-width: 544px) {
+                        top:20%;
+                    }
 
                 img {
                     height: 300px;
@@ -47,6 +56,18 @@
                     left: 50%;
                     top: 50%;
                     margin-bottom: 30px;
+                    @media (max-width: 992px) {
+                        height: 200px;
+                        width: 200px;
+                    }
+                    @media (max-width: 768px) {
+                        height: 150px;
+                        width: 150px;
+                    }
+                    @media (max-width: 544px) {
+                        height: 100px;
+                        width: 100px;
+                    }
                 }
             }
         }
