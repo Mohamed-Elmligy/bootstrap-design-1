@@ -61,6 +61,10 @@ nav .navbar-nav .nav-link {
 nav .navbar-nav .dropdown-item:hover {
   color: #ec1c23 !important; }
 
+@media (min-width: 992px) {
+  nav .collapse {
+    justify-content: flex-end; } }
+
 /*---------------------------------------------------- */
 /*----------------------slider------------------------------*/
 .slider {
@@ -73,9 +77,6 @@ nav .navbar-nav .dropdown-item:hover {
     display: flex;
     align-items: center;
     justify-content: left; }
-    @media (max-width: 768px) {
-      .slider .carousel-inner {
-        justify-content: center; } }
     .slider .carousel-inner .overlay {
       position: absolute;
       height: 100%;
@@ -90,11 +91,11 @@ nav .navbar-nav .dropdown-item:hover {
       left: 12%; }
       @media (max-width: 992px) {
         .slider .carousel-inner h1 {
-          font-size: 40px; } }
+          font-size: 40px;
+          width: 100vw; } }
       @media (max-width: 768px) {
         .slider .carousel-inner h1 {
-          font-size: 30px;
-          max-width: 100%;
+          font-size: 25px;
           left: auto;
           text-align: center; } }
       .slider .carousel-inner h1 span {

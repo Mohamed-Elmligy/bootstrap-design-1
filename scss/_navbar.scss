@@ -14,11 +14,13 @@ nav {
             color: $secoundColor;
         }
     }
+
     .navbar-nav {
         .nav-link {
             font-size: 16px;
             margin-left: 20px;
             font-weight: bold;
+
             &:hover {
                 color: $secoundColor !important;
             }
@@ -26,6 +28,12 @@ nav {
 
         .dropdown-item:hover {
             color: $secoundColor !important;
+        }
+    }
+
+    .collapse {
+        @media (min-width: 992px) {
+            justify-content: flex-end;
         }
     }
 }

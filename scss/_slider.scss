@@ -12,10 +12,6 @@
         display: flex;
         align-items: center;
         justify-content: left;
-        @media (max-width: 768px) {
-            justify-content: center;
-        }
-
         .overlay {
             position: absolute;
             height: 100%;
@@ -32,10 +28,10 @@
             left: 12%;
             @media (max-width: 992px) {
                 font-size: 40px;
+                width: 100vw;
             }
             @media (max-width: 768px) {
-                font-size: 30px;
-                max-width: 100%;
+                font-size: 25px;
                 left: auto;
                 text-align: center;
             }
