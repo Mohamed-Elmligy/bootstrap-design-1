@@ -1,13 +1,22 @@
 $(function () {
     'use strict';
-    // handil window hight
+
+        //===== nicescroll script ========== 
+
+    $("body").niceScroll({
+        cursorcolor: '#ec1c23',
+        cursorwidth: '10px',
+        cursorborder: '2px solid #ec1c23',
+        cursorborderradius: 10,
+    });
+    //========= handil window hight ============
     var winH   = $(window).height(),
         upperH = $('.upper-bar').innerHeight(),
         navH   = $('.navbar').innerHeight();
      
     $('.slider, .carousel-item').height( winH - (upperH + navH ));
 
-    //featured work shuffle
+    //=========== featured work shuffle ==========
     $('.featured-work ul li').on('click', function () {
         $(this).addClass('active').siblings().removeClass('active');
         if ($(this).data('class') === 'all') {
